@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  pading: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("https://umc.ac.id/wp-content/uploads/2023/07/IMG_6391-scaled.jpg") center top no-repeat;
+  display: block;
+  background-size: cover;
+  height: 768px;
+  width: 100%;
+  position: relative;
+}
+input {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+  position: relative;
+  color: #000;
+}
+.container .title::before {
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #dcdcdc, #80000);
+}
+form .user-details .input-box {
+  margin-bottom: 25px;
+  width: calc(100% / 2-20px);
+}
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.user-details .input-box input {
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border: 1px solid #800000;
+  border-bottom-width: 5px;
+  transition: all 0.5s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #800000;
+}
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .category {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 15px 0;
+}
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+form .category label .dot {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #dcdcdc;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: #800000;
+  border-color: #dcdcdc;
+}
+form input[type="radio"] {
+  display: none;
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+form .user-details .input-box {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+form .category {
+  width: 100%;
+}
+.content form .user-details {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar {
+  width: 5px;
+}

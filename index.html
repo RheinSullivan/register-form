@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Accounts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex h-screen justify-center items-center p-2.5">
+    <div class="container max-w-screen-md w-full bg-white/50 backdrop-blur-sm py-[25px] px-[30px] rounded-md shadow-md">
+      <div class="font-bold italic my-10 text-xl">
+        <ul>
+          <li>Name : Muh. Rizky Ramadhan (Rhein Sullivan)</li>
+          <li>Class : TI21B (Reguler 2)</li>
+          <li>NIm : 210511020</li>
+        </ul>
+      </div>
+      <h1 class="title text-xl font-bold relative text-red-700">Universitas Muhammadiyah Cirebon</h1>
+      <div class="content my-12">
+        <form action="#">
+          <div class="user-details flex flex-wrap justify-between mb-20 mt-12">
+            <div class="input-inbox my-2 mr-5">
+              <span class="details">Full Name :</span>
+              <input type="text" placeholder="Enter Full Name" required />
+            </div>
+            <div class="input-inbox my-2 mr-5">
+              <span class="details">Phone Number :</span>
+              <input type="text" placeholder="Enter Phone Number" required />
+            </div>
+            <div class="input-inbox my-2 mr-5">
+              <span class="details">Email :</span>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-inbox my-2 mr-5">
+              <span class="details">Password :</span>
+              <input type="password" id="pwd" name="pwd" placeholder="Create a password" required />
+            </div>
+            <div class="input-inbox my-2 mr-5">
+              <span class="details">Username :</span>
+              <input type="text" placeholder="Enter a username" required />
+            </div>
+            <div class="input-inbox my-2 mr-5">
+              <span class="details">Repeat Password :</span>
+              <input type="password" id="pwd" name="pwd" placeholder="Repeat Password" required />
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" />
+            <input type="radio" name="gender" id="dot-3" />
+            <span class="gender-title">Gender :</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Famale</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Gay/Lesbie</span>
+              </label>
+            </div>
+          </div>
+          <button class="mt-12 w-20 h-10 bg-red-800 text-gray-200 rounded-md border-dashed text-base font-medium tracking-wide cursor-pointer transition-all duration-500 ease-in-out hover:bg-gray-400 hover:text-red-800">
+            <input value="Sign Up" type="submit" class="justify-center items-center text-center font-bold" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
